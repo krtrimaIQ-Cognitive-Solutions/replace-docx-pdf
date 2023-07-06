@@ -1,0 +1,19 @@
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+lines_after_imports = 2
+combine_as_imports = true
+combine_star = true
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.8"
+reportPrivateUsage = false
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
